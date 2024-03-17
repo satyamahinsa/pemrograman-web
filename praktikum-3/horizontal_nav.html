@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation</title>
+    <style>
+        ul {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        ul li {
+            background-color: lightgrey;
+        }
+
+        li a {
+            display: block;
+            padding: 1em 2em;
+            color: grey;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-bottom: 5px solid lightgrey;
+        }
+
+        li a.active {
+            color: white;
+            background-color: green;
+        }
+
+        li a:hover {
+            background-color: grey;
+            color: white;
+            transition: background-color 0.3s;
+            border-bottom: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+

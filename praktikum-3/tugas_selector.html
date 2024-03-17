@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+    <style>
+        /* Adjacent Sibling Selector */
+        /* Mengubah warna teks pada paragraf yang menjadi saudara kandung langsung dari h2 */
+        h2 + p {
+            color: red;
+        }
+
+        /* General Sibling Selector  */
+        /* Memberikan warna kuning pada background di semua tautan yang merupakan saudara kandung umum dari paragraf */
+        p ~ a {
+            background-color: yellow;
+        }
+
+        /* Pseudo Elements */
+        /* Menambahkan emoji setelah setiap tautan */
+        a::after {
+            content: "❤️❤️"
+        }
+
+        /* Menambahkan emoji sebelum setiap tautan */
+        a::before {
+            content: "☕"
+        }
+
+        /* Mengubah ukuran font huruf pertama pada setiap paragraf dalam div */
+        div p::first-letter {
+            font-size: 30px;
+        }
+
+        /* Memberikan warna biru pada background di baris pertama setiap paragraf dalam div */
+        div p::first-line {
+            background-color: aquamarine;
+        }
+
+        /* Mengubah warna teks placeholder pada input */
+        input::placeholder {
+            color: red;
+        }
+
+        /* Mengubah warna marker dalam daftar tidak bernomor */
+        ::marker {
+            color: pink;
+        }
+
+        /* Mengubah warna teks dan background saat teks dipilih atau diseleksi */
+        ::selection {
+            color: red;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ini adalah heading 1</h2>
+    <a href="#">Klik disini!</a>
+    <p>Ini adalah paragraf 1</p>
+
+    <hr>
+
+    <h2>Ini adalah heading 2</h2>
+    <p>Ini adalah paragraf 2</p>
+
+    <hr>
+
+    <h3>Ini adalah heading 3</h3>
+    <p>Ini adalah paragraf 3</p>
+
+    <hr>
+
+    <input type="text" placeholder="Ketik nama anda">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab.</p>
+    <a href="#home">Home</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab.</p>
+    <a href="#about">About</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#contact">Contact</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quas in pariatur consequatur, obcaecati fuga sit. Quam asperiores obcaecati at quis fugiat eius quia voluptas saepe harum excepturi, omnis aperiam.</p>
+
+    <ul>
+        <li>Apel</li>
+        <li>Jeruk</li>
+        <li>Semangka</li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae consectetur tempore nesciunt autem iure debitis tempora hic deleniti porro harum voluptatem ad placeat, at alias laudantium eligendi. Exercitationem, mollitia! Praesentium!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eveniet ex magni officia dolores repudiandae iusto facere magnam illo atque voluptatem blanditiis temporibus fuga qui, dolorem quia hic nostrum molestias?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laudantium?</p>
+        </section>
+    </div>
+</body>
+</html>
+

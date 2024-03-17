@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Background</title>
+    <style>
+        /* Background warna */
+        p#background-warna {
+            background-color: yellow;
+        }
+
+        /* Background gambar */
+        p#background-gambar {
+            background-image: url("assets/pattern.jpg");
+        }
+        
+        /* Background campuran */
+        body {
+            background-image: url("assets/pattern-2.jpg"), linear-gradient(to right, #ff7e5f, #feb47b);
+            background-blend-mode: multiply;
+            background-size: cover;
+        }
+
+        div#background-campuran{
+            width: 100%;
+            height: 300px;
+            background: url('assets/pattern.jpg') top left / 700px 400px no-repeat scroll padding-box content-box blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="background-warna">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus facere commodi perferendis architecto ipsa quod velit libero temporibus, illo at voluptatibus, sequi modi nostrum aliquam! Voluptatem iste suscipit quod aliquam enim ipsa minus quibusdam pariatur veritatis mollitia. Necessitatibus voluptates ad doloribus eum dicta accusamus ratione quidem minima maiores tenetur.</p>
+
+    <p id="background-gambar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, qui non. Similique reprehenderit ipsum alias enim eum. Animi inventore veritatis, minima non, magnam dolores veniam consequuntur quisquam ex sapiente obcaecati asperiores, consectetur deleniti dolore tenetur dicta. Deserunt magnam praesentium et quo vero tenetur qui accusamus aut dolores laboriosam. Perspiciatis alias voluptatibus nobis aperiam facilis! Dolorem dolores saepe ea illum. Inventore sit illum adipisci hic voluptatibus sint laborum dolores, cumque dignissimos omnis dolore ex eaque reiciendis iure, corrupti aliquid qui facilis! Sapiente pariatur eos eligendi nemo ipsa, voluptatibus sed nisi, porro at perferendis rem! Maiores quod accusamus nostrum unde eveniet sequi!</p>
+
+    <div id="background-campuran">
+        <h1>Contoh Background</h1>
+    </div>
+</body>
+</html>
+
